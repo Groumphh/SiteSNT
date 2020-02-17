@@ -1,0 +1,242 @@
+<html>
+
+<head>
+  <style>
+    /*j'ai mis le CSS dans le fichier HTML parce que je trouvai ça plus simple*/
+    .content {
+      padding: 16px;
+    }
+
+    .sticky {
+      position: fixed;
+      top: 0;
+      width: 100%;
+    }
+
+    .sticky+.content {
+      padding-top: 60px;
+    }
+
+    body {
+      font-family: georgia, monospace, sans-serif;
+      font-size: 130%;
+    }
+
+    footer {
+      height: 80px;
+      padding-top: 30px;
+      text-align: center;
+      background-color: #F5F5F5;
+      border-top: 2px solid #AAA;
+    }
+
+    img {
+      float: right;
+    }
+
+    h2 {
+      margin: 20 0 10 30%;
+    }
+
+    p {
+      margin: 0 0 10 25%;
+    }
+
+    ul {
+      list-style-type: none;
+      margin: 0;
+      padding: 0;
+      overflow: hidden;
+      background-color: #444;
+    }
+
+    li {
+      float: left;
+    }
+
+    li a {
+      display: inline-block;
+      color: #eaffea;
+      text-align: center;
+      padding: 15px 15px;
+      text-decoration: none;
+    }
+
+    li a:hover {
+      background-color: #222;
+    }
+
+    div a:hover {
+      background-color: #dddddd;
+    }
+
+    .groumpf {
+      background-color: #ff0000;
+    }
+
+    .logo {
+      background-color: #ffffff;
+      float: left;
+    }
+
+    .logo2 {
+      background-color: #ffffff;
+      float: right;
+    }
+
+
+    /* Le texte en dessous des images */
+    #textecases {
+      font-size: large;
+      font-style: italic;
+      text-align: left;
+      color: white;
+      margin-left: 2%;
+    }
+
+    #titrecases {
+      margin: 20 0 10 30%;
+      color: white;
+      text-align: center;
+      margin-left: 0%;
+    }
+
+    /* Tout le bazar pour faire les colonnes contenant les images */
+    * {
+      box-sizing: border-box;
+    }
+
+    /* Création des quatre colonnes */
+    .column {
+      float: left;
+      width: 23%;
+      margin: 1% 1% 1% 1%;
+      padding: 1%;
+      background-color: #444;
+      height: 400px;
+    }
+
+    .column:hover {
+      float: left;
+      width: 25%;
+      margin: 0% 0% 1% 0%;
+      padding: 2%;
+      background-color: #222;
+      height: 400px;
+    }
+
+    .column:hover #titrecases {
+      color: #FF0000;
+    }
+
+    /* Entre colonnes */
+    .row:after {
+      content: "";
+      display: table;
+      clear: both;
+    }
+
+    /* Mise en page à deux colonnes */
+    @media screen and (max-width: 1200px) {
+      .column {
+        width: 48%;
+        margin: 1%;
+      }
+
+      .column:hover #titrecases {
+        color: #FF0000;
+      }
+
+      .column:hover {
+        float: left;
+        width: 50%;
+        margin: 0% 0% 2% 0%;
+        padding: 2%;
+        height: 400px;
+      }
+    }
+
+    /* Mise en page à une colonne */
+    @media screen and (max-width: 750px) {
+      .column {
+        width: 98%;
+        margin-left: 1%;
+      }
+
+      .column:hover #titrecases {
+        color: #FF0000;
+      }
+
+      .column:hover {
+        float: left;
+        width: 100%;
+        margin: 0% 0% 1% 0%;
+        padding: 2%;
+        height: 400px;
+      }
+    }
+  </style>
+  <title>Menu</title>
+</head>
+
+<body>
+
+  <h1>
+    <img class="logo" src="logol.png" alt="300" width="300">
+    <br>
+    <img class="logo2" src="logor.png" alt="300" width="300">
+    <br>
+  </h1>
+  <br>
+  <ul>
+    <li><a href="menu.html" class="groumpf">Menu</a></li>
+    <li><a href="Page pour la SNT.html">Pink Floyd</a></li>
+    <li><a href="index.html">Minecraft</a></li>
+    <li><a href="Contacts.html">Contacts</a></li>
+    <li><a href="nous.html">Et nous ?</a></li>
+  </ul>
+
+  <br>
+  <div class="row">
+    <a target="_self" href="Page pour la SNT.html">
+      <div class="column">
+
+        <h2 id="titrecases">Pink Floyd</h2><br>
+        <p id="textecases">Découvrez l'incroyable groupe Pink Floyd :
+        </p>
+      </div>
+    </a>
+    <a target="_self" href="index.html">
+      <div class="column">
+
+        <h2 id="titrecases">Minecraft</h2><br>
+        <p id="textecases">Découvrez le monde de Minecraft :
+        </p>
+      </div>
+    </a>
+    <a target="_self" href="Contacts.html">
+      <div class="column">
+
+        <h2 id="titrecases">Contacts</h2><br>
+        <p id="textecases">Vous souhaitez nous contacter ?
+        </p>
+      </div>
+    </a>
+    <a target="_self" href="nous.html">
+      <div class="column">
+
+        <h2 id="titrecases">Et nous ?</h2><br>
+        <p id="textecases">Vous souhaitez savoir qui nous sommes ?
+        </p>
+      </div>
+    </a>
+  </div>
+  <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+
+  <footer>
+    <p style="text-align:center">FAURE Joshua & GALLAY Benjamin 211 - Projet SNT 2020 - Menu </p>
+  </footer>
+
+</body>
+
+</html>

@@ -1,0 +1,181 @@
+body, html {
+  height: 100%;
+}
+
+/* Fond de la navbar */
+#navbar {
+  overflow: hidden;
+  background-image: url("images/bois2.jpg");
+  background-repeat: repeat-x;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  height: 8%;
+}
+
+/* Hyperliens de la navbar */
+#navbar a {
+  float: left;
+  display: block;
+  font-size: medium;
+  color: #F5F4F1;
+  text-align: center;
+  text-decoration: none;
+  margin: 15px;
+}
+
+#navbar a :hover {
+  color: #0FD411;
+  }
+/* Ecritures sur la navbar */
+.content {
+  padding: 16px;
+}
+
+/* La navbar devient "sticky" lorsque l'on défile */
+.sticky {
+  position: fixed;
+  top: 0;
+  width: 100%;
+}
+
+/* Pour éviter des bugs dans la page : */
+.sticky+.content {
+  padding-top: 60px;
+}
+
+.parallax {
+  /* L'image utilisée */
+  background-image: url("images/paysage.jpg");
+  /* Qu'elle prenne toute la place */
+  width: 100%;
+  height: 100%;
+  /* Création de l'effet parallax scrolling */
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  margin-bottom: 0px;
+}
+
+.parallax2 {
+  /* L'image utilisée */
+  background-image: url("images/logominecraft.png");
+  /* Qu'elle prenne toute la place */
+  width: 100%;
+  height: 100%;
+  background-size: 80%;
+  /* Création de l'effet parallax scrolling */
+  background-attachment: fixed;
+  background-position: 50% 15%;
+  background-repeat: no-repeat;
+}
+
+/* Séparations entre parallax et texte */
+#planches {
+  background-image: url("images/bois.png");
+  background-repeat: repeat-x;
+  height: 25%;
+  width: auto;
+}
+
+/* Balise contenant tout le texte */
+#texte {
+  width: 80%;
+  margin-left: auto;
+  margin-right: auto;
+  color: black;
+}
+
+/* texte de l'introduction */
+#intro {
+  font-style: italic;
+  font-size: x-large;
+  margin-top: 3em;
+  color: black;
+  width: 80%;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/* Balise contenant les paragraphes */
+p {
+  font-style: normal;
+  font-size: x-large;
+  font-family: Optima;
+}
+
+/* Balise contenant tout (pour le fond) */
+body {
+  width: 100%;
+  margin-left: auto;
+  margin-right: auto;
+  background-image: url("images/laine.png");
+}
+
+/* Les titres */
+h1 {
+  padding-top: 100px;
+  font-size: xx-large;
+  padding-left: 2em;
+  padding-bottom: 30px;
+  color: #684F00;
+}
+
+/* Les titres */
+h2 {
+  font-size: x-large;
+  padding-left: 4em;
+  padding-bottom: 20px;
+  padding-top: 60px;
+  color: #684F00;
+}
+
+/* Les titres */
+h3 {
+  padding-bottom: 40px;
+  font-size: x-large;
+  padding-left: 6em;
+  padding-top: 60px;
+  color: #684F00;
+}
+
+/* Le texte en dessous des images */
+#texteimages {
+  font-size: large;
+  font-style: italic;
+  text-align: center;
+}
+
+/* Tout le bazar pour faire les colonnes contenant les images */
+* {
+  box-sizing: border-box;
+}
+
+/* Création des quatre colonnes */
+.column {
+  float: left;
+  width: 25%;
+  padding: 10px;
+}
+
+/* Entre colonnes */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* Mise en page à deux colonnes */
+@media screen and (max-width: 1600px) {
+  .column {
+    width: 50%;
+  }
+}
+
+/* Mise en page à une colonne */
+@media screen and (max-width: 900px) {
+  .column {
+    width: 100%;
+  }
+}
