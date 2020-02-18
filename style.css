@@ -150,10 +150,10 @@ h3 {
 .Signature {
   color: black;
   font-size: x-large;
-  font-weight: normal;
+  font-weight: bold;
   text-align: center;
-  padding: 45px;
-  background-image: url("images/laine.png");
+  padding: 30px;
+  background-image: url("images/pancarte.png");
   }
 /* Tout le bazar pour faire les colonnes contenant les images */
 * {
