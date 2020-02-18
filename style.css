@@ -147,6 +147,14 @@ h3 {
   text-align: center;
 }
 
+.Signature {
+  color: black;
+  font-size: x-large;
+  font-weight: normal;
+  text-align: center;
+  padding: 45px;
+  background-image: url("images/laine.png");
+  }
 /* Tout le bazar pour faire les colonnes contenant les images */
 * {
   box-sizing: border-box;
