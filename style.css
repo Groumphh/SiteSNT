@@ -148,13 +148,26 @@ h3 {
 }
 
 .Signature {
+  width: 80%;
+  height: 30%;
+  margin-left: auto;
+  margin-right: auto;
   color: black;
   font-size: x-large;
   font-weight: bold;
   text-align: center;
-  padding: 30px;
-  background-image: url("images/pancarte.png");
+  padding: 6%;
+  padding-top: 3%;
+  background-image: url("images/laine.png");
   }
+
+.footer {
+  width: 40%;
+  height: 18%;
+  margin-left: auto;
+  margin-right: auto;
+  background-image: url("images/pancarte.png");
+
 /* Tout le bazar pour faire les colonnes contenant les images */
 * {
   box-sizing: border-box;
